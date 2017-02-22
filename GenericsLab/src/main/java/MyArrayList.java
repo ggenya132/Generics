@@ -2,6 +2,7 @@ import com.sun.tools.javac.util.ArrayUtils;
 
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.Objects;
 
 /**
  * Created by eugenevendensky on 2/22/17.
@@ -23,14 +24,10 @@ public class MyArrayList<T>  {
         myArrayList =  (T[]) new Object[10];
     }
 
-
     public MyArrayList(T[] t) {
 
         myArrayList = t;
     }
-
-  //  public T next(){} -- I might implement iterable;
-
 
     public boolean add(T elementToBeAdded) {
 
@@ -50,6 +47,7 @@ public class MyArrayList<T>  {
         resize();
         return elementToBeAdded == myArrayList[this.size()-1];
     }
+
     public boolean add(T elementToBeAdded, int indexToPutElementInto){
         T[] left = Arrays.copyOfRange(myArrayList,0, indexToPutElementInto );
 
@@ -86,6 +84,7 @@ public class MyArrayList<T>  {
         myArrayList = newArray;
         return  myArrayList[indexToPutElementInto] == elementToBeAdded;
     } //Wow, such refactor needed.
+
     public void addAll(T[] arrayToBeAdded){
 
         for(T t: arrayToBeAdded){
@@ -105,6 +104,7 @@ public class MyArrayList<T>  {
     public T get(int index) {
         return myArrayList[index];
     }
+
     public T[]getMyArrayList(){
         return myArrayList;
     }
@@ -168,5 +168,19 @@ public class MyArrayList<T>  {
 
         return myArrayList.length;
     }
+
+    public T[] subList(int fromIndexInclusive, int toIndexExclusive){
+        T[] toBeReturned = Arrays.copyOfRange(myArrayList,fromIndexInclusive, toIndexExclusive );
+
+        return  toBeReturned;
+    }
+
+    public Object[] toArray(){
+
+        return  (Object[]) myArrayList;  //wouldn't the erasure be the same as toArray(T[] t)?
+    }
+
+
+    //  public T next(){} -- I might implement iterable;
 
 }
