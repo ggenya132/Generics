@@ -17,6 +17,7 @@ public class MyArrayListTest
     MyArrayList<Integer> test;
     MyArrayList<String> test2;
     MyArrayList<Integer> test3;
+
     @Before
     public void setUp() {
         test2 = new MyArrayList<>(new String[]{"Test", "Contains"});
@@ -42,47 +43,48 @@ public class MyArrayListTest
 
 
     @Test
-public void isEmptyTestWithElements(){
-    boolean actual = test.isEmpty();
-    boolean expected = false;
-    assertEquals("I expect the boolean to return true if the list is empty and false if it is not", expected, actual);
-}
+    public void isEmptyTestWithElements() {
+        boolean actual = test.isEmpty();
+        boolean expected = false;
+        assertEquals("I expect the boolean to return true if the list is empty and false if it is not", expected, actual);
+    }
 
     @Test
-    public void isEmptyTestWithoutElements(){
+    public void isEmptyTestWithoutElements() {
 
-        MyArrayList <String> test2 = new MyArrayList<>(new String[]{}); //using strings for variety in test cases.
+        MyArrayList<String> test2 = new MyArrayList<>(new String[]{}); //using strings for variety in test cases.
         boolean actual = test2.isEmpty();
         boolean expected = true;
         assertEquals("I expect the boolean to return true if the list is empty and false if it is not", expected, actual);
     }
 
     @Test
-    public void containsTest(){
+    public void containsTest() {
 
         boolean actual = test2.contain("Contains");
         boolean expected = true;
-        assertEquals("I expect the test to return true if the element specified is a member element of the array",expected, actual);
+        assertEquals("I expect the test to return true if the element specified is a member element of the array", expected, actual);
 
     }
 
     @Test
-    public void removeTest(){
+    public void removeTest() {
         test.remove(3);
         int actual = test.get(3);
         int expected = 5;  //everything shifted to the left of the element removed.
         assertEquals("I expect the text to remove the appropriate element ", expected, actual);
-        }
+    }
 
     @Test
-    public void removeTestFirstElement(){
+    public void removeTestFirstElement() {
         test.remove(0);
         int actual = test.get(0);
         int expected = 2;  //Entire Array shifts left.
         assertEquals("I expect the text to remove the appropriate element ", expected, actual);
     }
+
     @Test
-    public void removeTestLastElement(){
+    public void removeTestLastElement() {
         test.remove(9);
         int actual = test.get(8);
         int expected = 9;  //Array stays the same except the very last element.
@@ -90,7 +92,7 @@ public void isEmptyTestWithElements(){
     }
 
     @Test
-    public void setTest(){
+    public void setTest() {
 
         Integer actual = test.set(9, 11);
         Integer expected = test.get(9);
@@ -98,41 +100,56 @@ public void isEmptyTestWithElements(){
     }
 
     @Test
-    public void setTestIfElementIsOutOfBounds(){
+    public void setTestIfElementIsOutOfBounds() {
         Integer actual = test.set(10, 11);
         Integer expected = test.get(10);
         assertEquals("I expect the test to properly set the given element in the requested index", expected, actual);
 
     }
+
     @Test
-    public void clearTest(){
+    public void clearTest() {
         test.clear();
         Integer actual = test.get(0);
         Integer expected = null;
         assertEquals("I expect the method to set every element to null", expected, actual);
 
     }
-    @Test
-    public void addOverrideTest(){
 
-        boolean actual = test.add(223,0);
+    @Test
+    public void addOverrideTest() {
+
+        boolean actual = test.add(223, 0);
         boolean expected = true;
         assertEquals("I expect the boolean to show that the element to be added is in the position requested", expected, actual);
     }
-    @Test
-    public void addOverrideTestWithStrings(){
 
-        boolean actual = test2.add("Another test",0);
+    @Test
+    public void addOverrideTestWithStrings() {
+
+        boolean actual = test2.add("Another test", 0);
         boolean expected = true;
         assertEquals("I expect the boolean to show that the element to be added is in the position requested", expected, actual);
     }
-    @Test
-    public void defaultConstructorTest(){
 
+    @Test
+    public void defaultConstructorTest() {
         int actual = test3.size();
         int expected = 10;
         assertEquals("I expect the default constructor to build a generic Integer[] with ten space", expected, actual);
     }
+
+    @Test
+    public void resizeTest() {
+        test3.add(1);
+        test3.add(2);
+        test3.add(3);
+        test3.add(5);
+        test3.resize();
+        int actual = test3.size();
+        int expected = 4;
+        assertEquals("I expect myArrayList to resize dynamically, and leave just three elements because they are not null", expected, actual);
+    }
+
+
 }
-
-
