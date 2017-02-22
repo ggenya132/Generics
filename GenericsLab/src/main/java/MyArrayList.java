@@ -1,4 +1,7 @@
+import com.sun.tools.javac.util.ArrayUtils;
+
 import java.util.Arrays;
+import java.util.Iterator;
 
 /**
  * Created by eugenevendensky on 2/22/17.
@@ -29,7 +32,7 @@ public class MyArrayList<T>  {
   //  public T next(){} -- I might implement iterable;
 
 
-    public boolean addAll(T elementToBeAdded) {
+    public boolean add(T elementToBeAdded) {
 
         if(this.contain(null)) {
             for (int i = 0; i < myArrayList.length; i++) {
@@ -47,7 +50,7 @@ public class MyArrayList<T>  {
         resize();
         return elementToBeAdded == myArrayList[this.size()-1];
     }
-    public boolean addAll(T elementToBeAdded, int indexToPutElementInto){
+    public boolean add(T elementToBeAdded, int indexToPutElementInto){
         T[] left = Arrays.copyOfRange(myArrayList,0, indexToPutElementInto );
 
         T[] right = Arrays.copyOfRange(myArrayList,indexToPutElementInto, myArrayList.length);
@@ -86,7 +89,7 @@ public class MyArrayList<T>  {
     public void addAll(T[] arrayToBeAdded){
 
         for(T t: arrayToBeAdded){
-            addAll(t);
+            add(t);
         }
     }
 
@@ -144,7 +147,7 @@ public class MyArrayList<T>  {
 
     public T set(int indexToReplaced, T elementToBeSet){
         if(indexToReplaced>myArrayList.length -1){
-            this.addAll(elementToBeSet);
+            this.add(elementToBeSet);
             return myArrayList[myArrayList.length-1];
         }
 
