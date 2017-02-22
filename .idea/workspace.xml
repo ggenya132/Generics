@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71824b14-3ef3-49c9-bd61-bf7a4736d3fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GenericsLab/src/main/java/MyArrayList.java" afterPath="$PROJECT_DIR$/GenericsLab/src/main/java/MyArrayList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GenericsLab/src/test/java/MyArrayListTest.java" afterPath="$PROJECT_DIR$/GenericsLab/src/test/java/MyArrayListTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GenericsLab/src/main/java/MySet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GenericsLab/src/test/java/MySetTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/GenericsLab/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Generics$MyArrayListTest.coverage" NAME="MyArrayListTest Coverage Results" MODIFIED="1487796999094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Generics$MyArrayListTest.coverage" NAME="MyArrayListTest Coverage Results" MODIFIED="1487805498730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Generics$MyArrayListTest_setTestIfElementIsOutOfBounds.coverage" NAME="MyArrayListTest.setTestIfElementIsOutOfBounds Coverage Results" MODIFIED="1487797614257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -38,19 +39,29 @@
           <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/GenericsLab/src/main/java/MyArrayList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+                <state relative-caret-position="201">
+                  <caret line="104" column="3" lean-forward="false" selection-start-line="104" selection-start-column="3" selection-end-line="106" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="method#MyArrayList#0;class#MyArrayList#0" expanded="false" />
-                    <element signature="method#MyArrayList#1;class#MyArrayList#0" expanded="false" />
-                    <element signature="method#MyArrayList#2;class#MyArrayList#0" expanded="false" />
-                    <element signature="method#add#1;class#MyArrayList#0" expanded="false" />
-                    <element signature="method#resize#0;class#MyArrayList#0" expanded="false" />
+                    <element signature="method#add#0;class#MyArrayList#0" expanded="false" />
+                    <element signature="e#2394#2395#0" expanded="true" />
+                    <element signature="e#2435#2436#0" expanded="true" />
                     <element signature="e#2467#2468#0" expanded="true" />
                     <element signature="e#2501#2502#0" expanded="true" />
                     <element signature="method#contain#0;class#MyArrayList#0" expanded="false" />
                     <element signature="e#3040#3066#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MySetTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/GenericsLab/src/test/java/MySetTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="585">
+                  <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -66,13 +77,32 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MyArrayListTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MyArrayListTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/GenericsLab/src/test/java/MyArrayListTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="415">
-                  <caret line="156" column="21" lean-forward="false" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+                <state relative-caret-position="495">
+                  <caret line="43" column="5" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MySet.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/GenericsLab/src/main/java/MySet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="490">
+                  <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#remove#0;class#MySet#0" expanded="false" />
+                    <element signature="e#558#584#0" expanded="false" />
+                    <element signature="method#set#0;class#MySet#0" expanded="false" />
+                    <element signature="method#contain#0;class#MySet#0" expanded="false" />
+                    <element signature="method#size#0;class#MySet#0" expanded="false" />
+                    <element signature="e#2584#2585#0" expanded="true" />
+                    <element signature="e#2619#2620#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -96,8 +126,8 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="330">
-                    <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+                  <first_editor relative-caret-position="150">
+                    <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
                     <folding />
                   </first_editor>
                   <second_editor />
@@ -121,6 +151,7 @@
       <find>binar</find>
       <find>string</find>
       <find>test contain</find>
+      <find>contains</find>
       <find>get</find>
     </findStrings>
   </component>
@@ -144,6 +175,8 @@
         <option value="$PROJECT_DIR$/GenericsLab/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/GenericsLab/src/main/java/MyArrayList.java" />
         <option value="$PROJECT_DIR$/GenericsLab/src/test/java/MyArrayListTest.java" />
+        <option value="$PROJECT_DIR$/GenericsLab/src/main/java/MySet.java" />
+        <option value="$PROJECT_DIR$/GenericsLab/src/test/java/MySetTest.java" />
       </list>
     </option>
   </component>
@@ -315,49 +348,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest.addArrayToArrayTest">
-    <configuration default="false" name="MyArrayListTest.defaultConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="GenericsLab" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="defaultConstructorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="MyArrayListTest.resizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="GenericsLab" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="resizeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MySetTest.rejectionOfDuplicatesTest">
     <configuration default="false" name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="GenericsLab" />
@@ -379,21 +370,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="GenericsLab" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="MyArrayListTest.addArrayToArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="GenericsLab" />
@@ -402,6 +378,69 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
       <option name="METHOD_NAME" value="addArrayToArrayTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MySetTest.rejectionOfDuplicatesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GenericsLab" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" value="rejectionOfDuplicatesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GenericsLab" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MySetTest.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="GenericsLab" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" value="getTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -789,19 +828,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.defaultConstructorTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.resizeTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.addArrayToArrayTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.addArrayToArrayTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MySetTest.rejectionOfDuplicatesTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MySetTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MySetTest.getTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.addArrayToArrayTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MyArrayListTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.resizeTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.defaultConstructorTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MySetTest.rejectionOfDuplicatesTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MySetTest.getTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MySetTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MyArrayListTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MyArrayListTest.addArrayToArrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -815,44 +854,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487789965674</updated>
-      <workItem from="1487789967797" duration="15361000" />
+      <workItem from="1487789967797" duration="16967000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyArrayListTest - 2017.02.22 at 17h 42m 20s.xml">
+    <history-entry file="MyArrayListTest - 2017.02.22 at 18h 17m 39s.xml">
       <configuration name="MyArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest - 2017.02.22 at 18h 01m 58s.xml">
+    <history-entry file="MyArrayListTest - 2017.02.22 at 18h 18m 02s.xml">
       <configuration name="MyArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest - 2017.02.22 at 18h 02m 28s.xml">
+    <history-entry file="MyArrayListTest - 2017.02.22 at 18h 18m 20s.xml">
       <configuration name="MyArrayListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyArrayListTest_addArrayToArrayTest - 2017.02.22 at 18h 09m 55s.xml">
-      <configuration name="MyArrayListTest.addArrayToArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyArrayListTest_addArrayToArrayTest - 2017.02.22 at 18h 10m 45s.xml">
-      <configuration name="MyArrayListTest.addArrayToArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyArrayListTest_addArrayToArrayTest - 2017.02.22 at 18h 11m 07s.xml">
-      <configuration name="MyArrayListTest.addArrayToArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyArrayListTest_addArrayToArrayTest - 2017.02.22 at 18h 13m 20s.xml">
-      <configuration name="MyArrayListTest.addArrayToArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyArrayListTest_addArrayToArrayTest - 2017.02.22 at 18h 13m 28s.xml">
-      <configuration name="MyArrayListTest.addArrayToArrayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyArrayListTest_addArrayToArrayTest - 2017.02.22 at 18h 13m 35s.xml">
-      <configuration name="MyArrayListTest.addArrayToArrayTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MyArrayListTest_addArrayToArrayTest - 2017.02.22 at 18h 13m 44s.xml">
       <configuration name="MyArrayListTest.addArrayToArrayTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MySetTest - 2017.02.22 at 18h 41m 39s.xml">
+      <configuration name="MySetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySetTest_getTest - 2017.02.22 at 18h 42m 00s.xml">
+      <configuration name="MySetTest.getTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySetTest_rejectionOfDuplicatesTest - 2017.02.22 at 18h 34m 45s.xml">
+      <configuration name="MySetTest.rejectionOfDuplicatesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySetTest_rejectionOfDuplicatesTest - 2017.02.22 at 18h 35m 47s.xml">
+      <configuration name="MySetTest.rejectionOfDuplicatesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySetTest_rejectionOfDuplicatesTest - 2017.02.22 at 18h 42m 26s.xml">
+      <configuration name="MySetTest.rejectionOfDuplicatesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySetTest_rejectionOfDuplicatesTest - 2017.02.22 at 18h 42m 49s.xml">
+      <configuration name="MySetTest.rejectionOfDuplicatesTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15361000" />
+    <option name="totallyTimeSpent" value="16967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-306" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -898,7 +937,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -926,8 +965,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
             <folding />
           </first_editor>
           <second_editor />
@@ -942,17 +981,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GenericsLab/src/main/java/MyArrayList.java">
+    <entry file="file://$PROJECT_DIR$/GenericsLab/src/test/java/MyArrayListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+        <state relative-caret-position="495">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#MyArrayList#0;class#MyArrayList#0" expanded="false" />
-            <element signature="method#MyArrayList#1;class#MyArrayList#0" expanded="false" />
-            <element signature="method#MyArrayList#2;class#MyArrayList#0" expanded="false" />
-            <element signature="method#add#1;class#MyArrayList#0" expanded="false" />
-            <element signature="method#resize#0;class#MyArrayList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenericsLab/src/main/java/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="104" column="3" lean-forward="false" selection-start-line="104" selection-start-column="3" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#add#0;class#MyArrayList#0" expanded="false" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2435#2436#0" expanded="true" />
             <element signature="e#2467#2468#0" expanded="true" />
             <element signature="e#2501#2502#0" expanded="true" />
             <element signature="method#contain#0;class#MyArrayList#0" expanded="false" />
@@ -961,12 +1008,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GenericsLab/src/test/java/MyArrayListTest.java">
+    <entry file="file://$PROJECT_DIR$/GenericsLab/src/test/java/MySetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="156" column="21" lean-forward="false" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+        <state relative-caret-position="585">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenericsLab/src/main/java/MySet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#remove#0;class#MySet#0" expanded="false" />
+            <element signature="e#558#584#0" expanded="false" />
+            <element signature="method#set#0;class#MySet#0" expanded="false" />
+            <element signature="method#contain#0;class#MySet#0" expanded="false" />
+            <element signature="method#size#0;class#MySet#0" expanded="false" />
+            <element signature="e#2584#2585#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
           </folding>
         </state>
       </provider>
