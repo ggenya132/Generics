@@ -1,8 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.lang.reflect.Array;
-
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -29,7 +27,7 @@ public class MyArrayListTest
 
     @Test
     public void addTestWithSingleArguement() {
-        boolean actual = test.add(6);
+        boolean actual = test.addAll(6);
         boolean expected = true;
         assertEquals("I expect the method to return true that the element requested to be added is in fact the element that was added", actual, expected);
 
@@ -37,7 +35,7 @@ public class MyArrayListTest
 
     @Test
     public void getTest() {
-        test.add(6);
+        test.addAll(6);
         Integer actual = test.get(5);
         Integer expected = 6;
         assertEquals("I expect the method to return the elemet of the index requested", expected, actual);
@@ -121,7 +119,7 @@ public class MyArrayListTest
     @Test
     public void addOverrideTest() {
 
-        boolean actual = test.add(223, 0);
+        boolean actual = test.addAll(223, 0);
         boolean expected = true;
         assertEquals("I expect the boolean to show that the element to be added is in the position requested", expected, actual);
     }
@@ -129,7 +127,7 @@ public class MyArrayListTest
     @Test
     public void addOverrideTestWithStrings() {
 
-        boolean actual = test2.add("Another test", 0);
+        boolean actual = test2.addAll("Another test", 0);
         boolean expected = true;
         assertEquals("I expect the boolean to show that the element to be added is in the position requested", expected, actual);
     }
@@ -143,10 +141,10 @@ public class MyArrayListTest
 
     @Test
     public void resizeTest() {
-        test3.add(1);
-        test3.add(2);
-        test3.add(3);
-        test3.add(5);
+        test3.addAll(1);
+        test3.addAll(2);
+        test3.addAll(3);
+        test3.addAll(5);
         test3.resize();
         int actual = test3.size();
         int expected = 4;
@@ -154,7 +152,7 @@ public class MyArrayListTest
     }
     @Test
     public void addArrayToArrayTest(){
-        test2.add(test4.getMyArrayList());
+        test2.addAll(test4.getMyArrayList());
         boolean actual = test2.contain("added");
         boolean expected = true;
         assertEquals("I expect the boolean will return true showing the method sucesfully added the entire array", expected, actual);
