@@ -12,6 +12,18 @@ public class MyArrayList<T>  {
 
     private T[] myArrayList;
 
+
+    public  MyArrayList(int t){
+
+        myArrayList = (T[]) new Object[t];
+    }
+
+    public  MyArrayList(){
+
+        myArrayList =  (T[]) new Object[10];
+    }
+
+
     public MyArrayList(T[] t) {
 
         myArrayList = t;
@@ -120,6 +132,11 @@ public class MyArrayList<T>  {
             this.set(i, null);
             i++;
         }
+    }
+
+    public int size(){
+
+        return myArrayList.length;
     }
 
 }

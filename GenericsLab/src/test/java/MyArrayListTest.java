@@ -16,11 +16,12 @@ public class MyArrayListTest
 
     MyArrayList<Integer> test;
     MyArrayList<String> test2;
+    MyArrayList<Integer> test3;
     @Before
     public void setUp() {
         test2 = new MyArrayList<>(new String[]{"Test", "Contains"});
         test = new MyArrayList<>(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
-
+        test3 = new MyArrayList<>();
     }
 
     @Test
@@ -124,6 +125,13 @@ public void isEmptyTestWithElements(){
         boolean actual = test2.add("Another test",0);
         boolean expected = true;
         assertEquals("I expect the boolean to show that the element to be added is in the position requested", expected, actual);
+    }
+    @Test
+    public void defaultConstructorTest(){
+
+        int actual = test3.size();
+        int expected = 10;
+        assertEquals("I expect the default constructor to build a generic Integer[] with ten space", expected, actual);
     }
 }
 
