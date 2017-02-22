@@ -38,6 +38,7 @@ public class MyArrayList<T>  {
             for (int i = 0; i < myArrayList.length; i++) {
                 if (myArrayList[i] == null) {
                     myArrayList[i] = elementToBeAdded;
+                    resize();
                     return myArrayList[i] == elementToBeAdded;
                 }
             }
@@ -46,7 +47,7 @@ public class MyArrayList<T>  {
         int length = myArrayList.length;
         myArrayList = Arrays.copyOf(myArrayList, length + 1);
         myArrayList[this.size() - 1] = elementToBeAdded;
-
+        resize();
         return elementToBeAdded == myArrayList[this.size()-1];
     }
     public boolean add(T elementToBeAdded, int indexToPutElementInto){
@@ -85,6 +86,12 @@ public class MyArrayList<T>  {
         myArrayList = newArray;
         return  myArrayList[indexToPutElementInto] == elementToBeAdded;
     } //Wow, such refactor needed.
+    public void add(T[] arrayToBeAdded){
+
+        for(T t: arrayToBeAdded){
+            add(t);
+        }
+    }
 
     public void resize(){
         for(int i = myArrayList.length -1; i >= 0; i--){
@@ -97,6 +104,9 @@ public class MyArrayList<T>  {
 
     public T get(int index) {
         return myArrayList[index];
+    }
+    public T[]getMyArrayList(){
+        return myArrayList;
     }
 
     public boolean isEmpty() {

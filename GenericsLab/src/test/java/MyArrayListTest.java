@@ -17,12 +17,14 @@ public class MyArrayListTest
     MyArrayList<Integer> test;
     MyArrayList<String> test2;
     MyArrayList<Integer> test3;
+    MyArrayList<String> test4;
 
     @Before
     public void setUp() {
         test2 = new MyArrayList<>(new String[]{"Test", "Contains"});
         test = new MyArrayList<>(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
         test3 = new MyArrayList<>();
+        test4 = new MyArrayList<>(new String[]{"To", "be", "added"});
     }
 
     @Test
@@ -150,6 +152,13 @@ public class MyArrayListTest
         int expected = 4;
         assertEquals("I expect myArrayList to resize dynamically, and leave just three elements because they are not null", expected, actual);
     }
+    @Test
+    public void addArrayToArrayTest(){
+        test2.add(test4.getMyArrayList());
+        boolean actual = test2.contain("added");
+        boolean expected = true;
+        assertEquals("I expect the boolean will return true showing the method sucesfully added the entire array", expected, actual);
 
+    }
 
 }
