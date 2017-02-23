@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class MyMap<K, V> {
 
     private int size;
-    private int defaultCapacity = 2;
+    private int defaultCapacity = 16;
     //@SuppressWarnings("unchecked")
     private MyEntry<K, V>[] values = new MyEntry[defaultCapacity];  //what is an unchecked assignment?
 
@@ -57,6 +57,23 @@ public class MyMap<K, V> {
     }
 
 
+    public void remove(K key){
+        for(int i  = 0; i < size; i++){
+            if(values[i].getKey().equals(key)){
+                values[i] = null;
+                size--;
+                condenseArray(i); // helper method shifts everything left of space removed;
+            }
+        }
+
+    }
+    private void condenseArray(int start){
+
+        for(int i = start; i < size; i++){
+            values[i] = values[i+1];
+
+        }
+    }
 }
 
   //  public MyMap(){

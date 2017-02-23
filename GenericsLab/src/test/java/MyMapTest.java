@@ -37,14 +37,34 @@ public class MyMapTest {
 
     @Test
     public void ensureCapacityTest(){
-        myMap.put("Key", 1);
-        myMap.put("Key2", 2);
-        myMap.put("Key 3", 3);
-
+        for(int i =1 ; i < 18; i++){
+            myMap.put("Key" + i, i);
+        }
         Integer actual = myMap.size();
-        Integer expected = 4;
+        Integer expected = 32;
         assertEquals("I expect ensureCapacity() to double the size of values when it reaches capacity", expected, actual);
     }
 
+    @Test
+    public void removeTest(){
+        for(int i =1 ; i < 18; i++){
+            myMap.put("Key" + i, i);
+        }
+        myMap.remove("Key1");
+        Integer actual = myMap.get("Key1");
+        Integer expected = null;
+        assertEquals("I expect to get null back after removing the value", expected, actual);
+    }
+
+    @Test
+    public void removeTest&Condense(){
+        for(int i =1 ; i < 18; i++){
+            myMap.put("Key" + i, i);
+        }
+        myMap.remove("Key1");
+
+
+        assertEquals("I expect to get null back after removing the value", expected, actual);
+    }
 
 }
