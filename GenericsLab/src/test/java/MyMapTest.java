@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Set;
+
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -57,14 +59,18 @@ public class MyMapTest {
     }
 
     @Test
-    public void removeTest&Condense(){
+    public  void keySetTest(){
         for(int i =1 ; i < 18; i++){
             myMap.put("Key" + i, i);
         }
-        myMap.remove("Key1");
+        Set<String> mySet = myMap.keySet();
+        boolean actual = mySet.contains("Key1");
+        boolean expected = true;
+        assertEquals("I expect the key set to contain the keys and be respresented a boolean", expected, actual);
 
 
-        assertEquals("I expect to get null back after removing the value", expected, actual);
     }
+
+
 
 }

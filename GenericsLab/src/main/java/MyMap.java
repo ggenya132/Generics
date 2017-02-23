@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by eugenevendensky on 2/22/17.
@@ -74,22 +76,14 @@ public class MyMap<K, V> {
 
         }
     }
+
+    public Set<K> keySet(){
+        Set<K> set = new HashSet<K>();
+        for(int i = 0; i < size; i++){
+            set.add(values[i].getKey());
+
+        }
+        return  set;
+    }
 }
 
-  //  public MyMap(){
-//
-//        myEntry =  (MyEntry[]) new Object[10];
-//    }
-//
-//    public V put(K k, V v){
-//
-//     MyEntry newMyEntry = new MyEntry(k, v);
-//
-//     if(myEntry[0]!=null){
-//
-//         myEntry[myEntry.length+1] = newMyEntry;
-//     }
-//
-//     this.myEntry[0] = newMyEntry;
-//     return myEntry[0].getV();
-//    }
